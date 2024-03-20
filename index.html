@@ -1,36 +1,117 @@
-<div class="container">
-    <!--  Shopping cart table wrapper  -->
-    <div id="shopping-cart">
-        <div class="txt-heading">
-            <h1>Shopping cart</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav">
+
+        <a href="#" class="logo">
+            <ion-icon name="fast-food"></ion-icon>
+            Food Delight
+        </a>
+
+        <div class="box">
+            <div class="cart-count">0</div>
+            <ion-icon name="cart" id="cart-icon"></ion-icon>
         </div>
-        <a onClick="emptyCart()" id="btnEmpty">Empty Cart</a>
-        <table class="tbl-cart" cellpadding="10" cellspacing="1">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th class='text-right' width="10%">Unit Price</th>
-                    <th class='text-right' width="5%">Quantity</th>
-                    <th class='text-right' width="10%">Sub Total</th>
-                </tr>
-            </thead>
-            <!--  Cart table to load data on "add to cart" action -->
-            <tbody id="cartTableBody">
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td class="text-right">Total:</td>
-                    <td id="itemCount" class="text-right" colspan="2"></td>
-                    <td id="totalAmount" class="text-right"></td>
-                </tr>
-            </tfoot>
-        </table>
-    </div>
-    <!-- Product gallery shell to load HTML from JavaScript code -->
-    <div id="product-grid">
-        <div class="txt-heading">
-            <h1>Products</h1>
+
+        <div class="cart">
+            <div class="cart-title">Cart Items</div>
+            <div class="cart-content">
+
+            </div>
+
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+            </div>
+
+            <button class="btn-buy">Place Order</button>
+
+            <ion-icon name="close" id="cart-close"></ion-icon>
+
         </div>
-        <div id="product-item-container"></div>
     </div>
-</div>
+    </header>
+    <div class="container">
+        <h2 class="title">Discover the Best Food</h2>
+        <div class="shop-content">
+
+
+            <div class="food-box">
+                <div class="pic">
+                    <img src="images/camera.jpg" class="food-img">
+                </div>
+                <h2 class="food-title">Plain</h2>
+                <span class="food-price">$40</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+
+
+            <div class="food-box">
+                <div class="pic"><img src="images/external-hard-drive.jpg" class="food-img"></div>
+                <h2 class="food-title">Paper Roast</h2>
+                <span class="food-price">$65</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+
+            <div class="food-box">
+                <div class="pic"><img src="images/laptop.jpg" class="food-img"></div>
+                <h2 class="food-title">Onion Roast</h2>
+                <span class="food-price">$80</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+
+            <div class="food-box">
+                <div class="pic"><img src="images/watch.jpg" class="food-img"></div>
+                <h2 class="food-title">Egg Parotta</h2>
+                <span class="food-price">$55</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+
+            <div class="food-box">
+                <div class="pic">
+                    <img src="images/camera.jpg" class="food-img">
+                </div>
+                <h2 class="food-title">Plain</h2>
+                <span class="food-price">$40</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+
+
+            <div class="food-box">
+                <div class="pic"><img src="images/external-hard-drive.jpg" class="food-img"></div>
+                <h2 class="food-title">Paper Roast</h2>
+                <span class="food-price">$65</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+
+            <div class="food-box">
+                <div class="pic"><img src="images/laptop.jpg" class="food-img"></div>
+                <h2 class="food-title">Onion Roast</h2>
+                <span class="food-price">$80</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+
+            <div class="food-box">
+                <div class="pic"><img src="images/watch.jpg" class="food-img"></div>
+                <h2 class="food-title">Egg Parotta</h2>
+                <span class="food-price">$55</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+
+
+
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
